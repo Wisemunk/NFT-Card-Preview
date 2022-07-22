@@ -1,0 +1,130 @@
+@font-face {
+    font-family: Outfit;
+    src: url("font/Outfit.ttf") format("truetype");
+}
+
+body {
+    font-family: Outfit, sans-serif;
+    background: hsl(217, 54%, 11%);
+}
+
+.content {
+    height: 550px;
+    width: 350px;
+    background: hsl(216, 50%, 16%);
+    display: table-cell;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+}
+
+.content .image {
+    position: relative;
+    border-radius: 10px;
+    height: 300px;
+    width: 300px;
+    margin-top: 5%;
+}
+
+.content .image:hover {
+    cursor: pointer;
+    position: absolute;
+    margin-top: 0;
+    top: 0;
+    left: -20%;
+    right: 0;
+    bottom: 0;
+    height: 550px;
+    width: 550px;
+}
+
+#eq, #descrip {
+    text-align: left;
+    font-size: 18px;
+    margin-left: 7%;
+    margin-right: 7%;
+}
+
+#eq {
+    color: white;
+}
+
+#eq:hover {
+    cursor: pointer;
+    color: cyan;
+}
+
+#descrip {
+    color: hsl(215, 51%, 70%);
+    margin-bottom: 0;
+}
+
+#eth_left {
+    display: flex;
+}
+
+.eth, .left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.eth {
+    margin-left: 7%;
+    margin-right: 30%;
+    color: cyan;
+    text-align: center;
+}
+
+.eth img {
+    width: 10px;
+    height: 17px;
+    margin-right: 10px;
+}
+
+.left {
+    margin-right: 7%;
+    color: hsl(215, 51%, 70%);
+}
+
+.left img {
+    width: 20px;
+    height: 20px;
+    margin-right: 7px;
+}
+
+.owner {
+    margin-right: 7%;
+    margin-left: 7%;
+    display: flex;
+    flex-direction: row;
+    border-top: 1px solid hsl(215, 32%, 27%);
+}
+
+.owner img {
+    width: 30px;
+    height: 30px;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-top: 6%;
+}
+
+.owner p {
+    color: hsl(215, 51%, 70%);
+    margin-left: 5%;
+    margin-top: 8%;
+}
+
+.owner em {
+    color: white;
+}
+
+.owner em:hover {
+    cursor: pointer;
+    color: cyan;
+}
